@@ -1,0 +1,158 @@
+.navbar {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 40px 80px;
+  z-index: 9999;
+}
+
+.navbar-largescreens {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar p {
+  font-family: var(--primary-font);
+  font-size: 30px;
+  font-weight: 400;
+
+  transition: all 0.5s;
+  color: #fff;
+}
+.navbar p:hover {
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+.navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 80px;
+}
+
+.navbar ul li {
+  list-style-type: none;
+}
+
+.navlinks {
+  list-style-type: none;
+  text-decoration: none;
+
+  font-family: var(--secondary-font);
+  font-size: 15px;
+  color: #fff;
+  font-weight: 200;
+
+  transition: all 0.5s;
+}
+
+.navbar ul li a:hover {
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+.active {
+  color: var(--secondary-color);
+}
+
+.navbar__rightside-hamburger {
+  padding: 20px;
+  display: none;
+  margin-left: auto;
+  cursor: pointer;
+}
+.navbar__mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100vh;
+
+  background-color: var(--bg-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  /* animation: slide-bottom 0.5s ease; */
+  transition: all 0.6s;
+}
+.navbar__mobile ul {
+  gap: 70px;
+}
+.navbar__mobile-mainlist {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.navlinks-mobile {
+  list-style-type: none;
+  text-decoration: none;
+
+  font-family: var(--secondary-font);
+  font-size: 25px;
+  color: #fff;
+  font-weight: 200;
+ transition: all 0.5s;
+}
+
+.navlinks-mobile:hover {
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+.active {
+  color: var(--secondary-color);
+}
+
+.remove {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.dontremove {
+  display: none;
+}
+
+.social-icons {
+ display: flex;
+ justify-content: center;
+ padding: 20px;
+
+}
+
+.social-icons img {
+  width: 20px;
+  margin: 20px;
+  margin-top: -30px;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 1100px) {
+  .navbar {
+    padding: 40px 20px;
+  }
+
+  .navbar__rightside-hamburger {
+    display: block;
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    padding: 10px;
+  }
+
+  .navbar__leftside {
+    display: none;
+  }
+}
