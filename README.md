@@ -1,7 +1,7 @@
 #  Live Website link
 https://medlar.media 
         or 
-https://medlar-media.netify.app
+[https://medlar-media.netify.app](https://medlar-media.netlify.app/)
 
 Collaborator: https://github.com/Ibadullah5
 
